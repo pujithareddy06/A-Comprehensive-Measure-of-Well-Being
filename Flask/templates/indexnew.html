@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌍 HDI Prediction Form</h1>
+
+    <p>Enter the country's information below.</p>
+
+    <form action="/predict" method="POST">
+
+        <label><b>Life Expectancy</b></label><br>
+        <input type="number" step="any" name="life" placeholder="Example: 75" required><br><br>
+
+        <label><b>Mean Years of Schooling</b></label><br>
+        <input type="number" step="any" name="school" placeholder="Example: 12" required><br><br>
+
+        <label><b>Gross National Income (GNI) per Capita</b></label><br>
+        <input type="number" step="any" name="gni" placeholder="Example: 25000" required><br><br>
+
+        <label><b>Internet Users (%)</b></label><br>
+        <input type="number" step="any" name="internet" placeholder="Example: 80" required><br><br>
+
+        <button class="btn" type="submit">Predict HDI</button>
+
+    </form>
+
+    <br>
+
+    <a href="/">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>

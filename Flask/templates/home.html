@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Development Index Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌍 Human Development Index Prediction System</h1>
+    <img src="{{ url_for('static', filename='images/hdi.jpg') }}"
+    alt="HDI"
+    width="500">
+
+    <p>
+        This project predicts the Human Development Index (HDI) of a country
+        using Machine Learning based on four important factors.
+    </p>
+
+    <h3>Features Used</h3>
+
+    <ul>
+        <li>✔ Life Expectancy</li>
+        <li>✔ Mean Years of Schooling</li>
+        <li>✔ Gross National Income (GNI) per Capita</li>
+        <li>✔ Internet Users (%)</li>
+    </ul>
+
+    <a href="/Prediction">
+        <button class="btn">Start Prediction</button>
+    </a>
+
+</div>
+
+</body>
+</html>
